@@ -6,7 +6,7 @@ In the subdirectory "templates" we (currently) store templates in a flat list wi
 
 A possible template timeline example for ADL1.4 based files
 * `prostate-surgery-decision.1.2.7.oet` 
-* `prostate-surgery-decision.1.2.7.opt` operational template
+* `prostate-surgery-decision.1.2.7.opt` operational template (another file format) that can be commited either at the same time as the .oet file that it is based on or later
 * `prostate-surgery-decision.1.2.8-alpha.oet` several uploads/commits to this Git repository can be done using the same alpha version file name, they are identified using GITs built in versioning instead of changing file name (comparable to "build number" in the identification spec above)   
 * `prostate-surgery-decision.1.2.8-rc1.oet` 
 * `prostate-surgery-decision.1.2.8.oet` 
