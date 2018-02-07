@@ -4,7 +4,7 @@ A repository intended for local openEHR assets like operational templates and st
 # Tentative naming conventions for the /template directory
 In the subdirectory "templates" we (currently) store templates in a flat list with disciplined file-naming using the form `templatename.versionpattern.filetype` examples follow. We choose to use the version pattern described in https://www.openehr.org/releases/AM/latest/docs/Identification/Identification.html#_version_numbering also for templates
 
-A possible template timeline for ADL1.4 based files
+A possible template timeline example for ADL1.4 based files
 * `prostate-surgery-decision.1.2.7.oet` 
 * `prostate-surgery-decision.1.2.7.opt` operational template
 * `prostate-surgery-decision.1.2.8-alpha.oet` several uploads/commits to this Git repository can be done using the same alpha version file name, they are identified using GITs built in versioning instead of changing file name (comparable to "build number" in the identification spec above)   
@@ -14,8 +14,8 @@ A possible template timeline for ADL1.4 based files
 
 To be determined (TBD) later: shall chosen language (e.g. sw for swedish) be included in OPT file names of ADL1.4-based files?
 
-A possible template timeline for ADL2 based files
-* ...
+A possible template timeline example  for ADL2 based files
+* ...TBD...
 
 # Tentative naming conventions for the /query directory
 TBD
