@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>2d25bc1d-5e7d-4302-9095-644ddfba50fa</id>
+  <name>levnadsvanor, mall baserad på nationella svenska riktlinjer v0.1.0</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.lifestyle_factors.v1" concept_name="Lifestyle Factors">
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1" concept_name="Tobacco smoking summary" path="/content[at0004]">
+      <Rule path="/data[at0001]/items[at0015]" max="0" />
+      <Rule path="/data[at0001]/items[at0080]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]" max="1" clone="true" name="Cigarettes" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Cigarettes']/items[at0053]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Cigarettes']/items[at0064]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Cigarettes']/items[at0064]" max="1" clone="true" name="Nuvarande cigarettrökningsepisod" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Cigarettes']/items[at0064 and name/value='Nuvarande cigarettrökningsepisod']/items[at0081]" min="1" default="Nuvarande cigarettrökningsepisod" name="Nuvarande cigarettrökningsepisod">
+        <constraint xsi:type="multipleConstraint">
+          <includedTypes>Text</includedTypes>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/items[at0029 and name/value='Cigarettes']/items[at0064 and name/value='Nuvarande cigarettrökningsepisod']/items[at0082]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Cigarettes']/items[at0064 and name/value='Nuvarande cigarettrökningsepisod']/items[at0030]">
+        <constraint xsi:type="multipleConstraint">
+          <includedTypes>Coded_text</includedTypes>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/items[at0029 and name/value='Cigarettes']/items[at0064 and name/value='Nuvarande cigarettrökningsepisod']/items[at0023]">
+        <constraint xsi:type="quantityConstraint">
+          <excludedUnits>1/wk</excludedUnits>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/items[at0029 and name/value='Cigarettes']/items[at0064 and name/value='Nuvarande cigarettrökningsepisod']/items[at0065]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Cigarettes']/items[at0064 and name/value='Nuvarande cigarettrökningsepisod']/items[at0025]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Cigarettes']/items[at0064 and name/value='Nuvarande cigarettrökningsepisod']/items[at0087]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Cigarettes']/items[at0017]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Cigarettes']/items[at0069]" max="0" />
+      <Rule path="/data[at0001]/items[at0016]" max="0" />
+      <Rule path="/data[at0001]/items[at0074]" max="0" />
+      <Rule path="/data[at0001]/items[at0019]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0071]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0085]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0075]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0076]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0079]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0072]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0022]" max="0" />
+    </Content>
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.smokeless_tobacco_summary.v0" concept_name="Smokeless tobacco summary" path="/content[at0004]">
+      <Rule path="/data[at0001]/items[at0015]" max="0" />
+      <Rule path="/data[at0001]/items[at0080]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]" max="1" clone="true" name="Snus" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Snus']/items[at0053]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Snus']/items[at0064]" max="1" name="Nuvarande snusningsperiod" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Snus']/items[at0064]/items[at0081]" default="Nuvarande snusningsperiod" name="Nuvarande snusningsperiod">
+        <constraint xsi:type="multipleConstraint">
+          <includedTypes>Text</includedTypes>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/items[at0029 and name/value='Snus']/items[at0064]/items[at0082]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Snus']/items[at0064]/items[at0030]">
+        <constraint xsi:type="multipleConstraint">
+          <includedTypes>Coded_text</includedTypes>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/items[at0029 and name/value='Snus']/items[at0064]/items[at0023]" name="Förbrukning dosor per vecka">
+        <constraint xsi:type="quantityConstraint">
+          <excludedUnits>1/d</excludedUnits>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/items[at0029 and name/value='Snus']/items[at0064]/items[at0065]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Snus']/items[at0064]/items[at0025]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Snus']/items[at0064]/items[at0087]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Snus']/items[at0017]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Snus']/items[at0069]" max="0" />
+      <Rule path="/data[at0001]/items[at0016]" max="0" />
+      <Rule path="/data[at0001]/items[at0074]" max="0" />
+      <Rule path="/data[at0001]/items[at0019]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0071]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0085]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0075]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0076]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0079]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0072]">
+        <constraint xsi:type="multipleConstraint">
+          <includedTypes>Quantity (Mass)</includedTypes>
+        </constraint>
+      </Rule>
+      <Rule path="/protocol[at0021]/items[at0022]" max="0" />
+    </Content>
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.alcohol_use_summary.v0" concept_name="Alcohol use summary" path="/content[at0004]">
+      <Rule path="/data[at0001]/items[at0089]" max="0" />
+      <Rule path="/data[at0001]/items[at0015]" max="0" />
+      <Rule path="/data[at0001]/items[at0080]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]" max="1" clone="true" name="Veckokonsumtion Standardglas" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0052]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0053]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0064]" max="1" name="Nuvarande episod" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0064]/items[at0081]" default="Nuvarande episod" name="Nuvarande episod">
+        <constraint xsi:type="multipleConstraint">
+          <includedTypes>Text</includedTypes>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0064]/items[at0013]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0064]/items[at0082]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0064]/items[at0030]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0064]/items[at0023]">
+        <constraint xsi:type="quantityConstraint">
+          <excludedUnits>1/d</excludedUnits>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0064]/items[at0065]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0064]/items[at0025]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0064]/items[at0087]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0014]" max="0" />
+      <Rule path="/data[at0001]/items[at0029 and name/value='Veckokonsumtion Standardglas']/items[at0069]" max="0" />
+      <Rule path="/data[at0001]/items[at0016]" max="0" />
+      <Rule path="/data[at0001]/items[at0019]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0071]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0085]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0075]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0076]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0079]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0103]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0104]" default="12 g">
+        <constraint xsi:type="quantityConstraint">
+          <excludedUnits>[oz_av]</excludedUnits>
+        </constraint>
+      </Rule>
+      <Rule path="/protocol[at0021]/items[at0022]" max="0" />
+    </Content>
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.dietary_habit_summary.v0" concept_name="Dietary habit summary" path="/content[at0004]">
+      <Rule path="/data[at0001]/items[at0002]/items[at0004]" min="1" />
+      <Rule path="/data[at0001]/items[at0002]/items[at0009]" min="1" />
+      <Rule path="/data[at0001]/items[at0002]/items[at0014]" min="1" />
+      <Rule path="/data[at0001]/items[at0002]/items[at0019]" min="1" />
+      <Rule path="/data[at0001]/items[at0002]/items[at0024]" min="1" />
+    </Content>
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.physical_activity_summary.v0" concept_name="Physical activity summary" path="/content[at0004]">
+      <Rule path="/data[at0001]/items[at0002]" max="0" />
+      <Rule path="/data[at0001]/items[at0005]" max="0" />
+      <Rule path="/data[at0001]/items[at0006]" max="0" />
+      <Rule path="/data[at0001]/items[at0008]">
+        <constraint xsi:type="quantityConstraint">
+          <excludedUnits>1/mo</excludedUnits>
+          <excludedUnits>1/d</excludedUnits>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/items[at0007]">
+        <constraint xsi:type="quantityConstraint">
+          <excludedUnits>1/mo</excludedUnits>
+          <excludedUnits>1/d</excludedUnits>
+        </constraint>
+      </Rule>
+      <Rule path="/protocol[at0014]/items[at0016]" max="0" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.physical_activity_calculation.v0" concept_name="Beräkning av fysisk aktivitet" path="/protocol[at0014]/items[at0015]" />
+    </Content>
+    <Context />
+  </definition>
+</template>
