@@ -17,7 +17,7 @@ A possible template timeline example for ADL1.4 based files
 
 Note: there is no requirement on going via -alpha and -rc stages.
 
-Note: After initial release (MAJOR-version >= 1) "breaking changes" must increase the MAJOR-version number. Initial versions with MAJOR-version = 0 may are an exception, they may introduce "breaking changes" without indreasing the MAJOR part. Example: If a filename has changed from from `prostate-surgery-decision.0.3.7.oet` to `prostate-surgery-decision.0.4.0.oet` nothing can be inferred from teh version regarding possible "breaking changes".
+Note: After initial release (MAJOR-version >= 1) "breaking changes" must increase the MAJOR-version number. Initial versions with MAJOR-version = 0 may are an exception, they may introduce "breaking changes" without indreasing the MAJOR part. Example: If a filename has changed from from `prostate-surgery-decision.0.3.7.oet` to `prostate-surgery-decision.0.4.0.oet` nothing can be inferred from the version number regarding possible "breaking changes".
 
 To be determined (TBD) later: shall chosen language (e.g. sw for swedish) be included in OPT file names of ADL1.4-based files?
 
