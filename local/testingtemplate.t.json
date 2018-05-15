@@ -4,11 +4,12 @@
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "date" : "2018-05-15"
+      "date" : "2018-05-15",
+      "organisation" : "Region Ostergötland "
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "in_development"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -19,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "fc8444237e37bc7f86b88badb5ceeec9",
+      "MD5-CAM-1.0.1" : "0d6df6d576e7852386ec91c3abf9f29b",
       "PARENT:MD5-CAM-1.0.1" : "4c03dc82597643b7ededa2d6f1ba90c5"
     },
     "details" : {
@@ -201,7 +202,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "3bd635ef-0776-3f3d-b10a-421714920cd0",
+  "buildUid" : "f802fbee-9204-353f-9408-be3a3878986f",
   "rmName" : "openehr",
   "rmRelease" : "1.0.3",
   "generated" : true,
