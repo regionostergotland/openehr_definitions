@@ -20,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "0d6df6d576e7852386ec91c3abf9f29b",
+      "MD5-CAM-1.0.1" : "c4bbbac62fc8c6a6e078e7b82e617327",
       "PARENT:MD5-CAM-1.0.1" : "4c03dc82597643b7ededa2d6f1ba90c5"
     },
     "details" : {
@@ -35,6 +35,16 @@
         "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
+      }
+    }
+  },
+  "annotations" : {
+    "@type" : "RESOURCE_ANNOTATIONS",
+    "documentation" : {
+      "en" : {
+        "" : {
+          "annokey" : "annoval"
+        }
       }
     }
   },
@@ -174,7 +184,7 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
           "text" : "testingtesting",
-          "description" : "testingtesting"
+          "description" : "testing testing in a cluster template"
         },
         "at0002.1" : {
           "@type" : "ARCHETYPE_TERM",
