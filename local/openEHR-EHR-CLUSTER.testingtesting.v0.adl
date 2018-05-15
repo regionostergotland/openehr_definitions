@@ -43,7 +43,7 @@ description
         ["original_namespace"] = <"org.openehr">
         ["original_publisher"] = <"openEHR Foundation">
         ["custodian_namespace"] = <"org.openehr">
-        ["MD5-CAM-1.0.1"] = <"b8cfdc5c4114dd6b244ff7dc9afeb0ea">
+        ["MD5-CAM-1.0.1"] = <"c5a1944507d660581e1d5945532dda45">
         ["build_uid"] = <"3bd635ef-0776-3f3d-b10a-421714920cd0">
     >
 
@@ -64,6 +64,7 @@ definition
                                                             >
                         }
                     }
+                    CLUSTER[at0004] occurrences matches {0..1} matches {*}
                 }
             }
         }
@@ -89,6 +90,10 @@ ontology
                     text = <"goodbye">
                     description = <"*">
                 >
+                ["at0004"] = <
+                    text = <"Greeting">
+                    description = <"*">
+                >
             >
         >
         ["sv"] = <
@@ -109,6 +114,10 @@ ontology
                     text = <"Hej då!">
                     description = <"*">
                 >
+                ["at0004"] = <
+                    text = <"*Greeting (en)">
+                    description = <"*">
+                >
             >
         >
         ["de"] = <
@@ -127,6 +136,10 @@ ontology
                 >
                 ["at0003"] = <
                     text = <"Auf wienerscnitsel">
+                    description = <"*">
+                >
+                ["at0004"] = <
+                    text = <"*Greeting (en)">
                     description = <"*">
                 >
             >
