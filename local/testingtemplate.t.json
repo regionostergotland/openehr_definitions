@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "df3153720691c4c42d0759a6177eaf95",
+      "MD5-CAM-1.0.1" : "fc8444237e37bc7f86b88badb5ceeec9",
       "PARENT:MD5-CAM-1.0.1" : "4c03dc82597643b7ededa2d6f1ba90c5"
     },
     "details" : {
@@ -136,6 +136,22 @@
                         "upperIncluded" : false
                       } ]
                     } ]
+                  }, {
+                    "@type" : "C_PRIMITIVE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "°C" ]
+                    }, {
+                      "@type" : "C_REAL",
+                      "rmTypeName" : "REAL",
+                      "constraint" : [ {
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false,
+                        "lowerIncluded" : false,
+                        "upperIncluded" : false
+                      } ]
+                    } ]
                   } ]
                 } ]
               } ]
@@ -162,14 +178,15 @@
         "at0002.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0002.1",
-          "text" : "Hi!",
+          "text" : "Howdy!",
           "description" : "*"
         },
         "at0003.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0003.1",
           "text" : "goodbye",
-          "description" : "*"
+          "description" : "Amount of welcome greeting",
+          "comment" : "Warm/cold (temp) goodbye or long/short (length?)"
         },
         "at0001" : {
           "@type" : "ARCHETYPE_TERM",
