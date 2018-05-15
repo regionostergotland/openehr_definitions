@@ -1,0 +1,74 @@
+archetype (adl_version=1.4; uid=c170263b-7c6f-44d7-91b0-672b65f8009d)
+    openEHR-EHR-CLUSTER.testingtesting.v0
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+        ["date"] = <"2018-05-15">
+    >
+    lifecycle_state = <"unmanaged">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+        >
+    >
+    other_details = <
+        ["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+        ["custodian_organisation"] = <"openEHR Foundation">
+        ["original_namespace"] = <"org.openehr">
+        ["original_publisher"] = <"openEHR Foundation">
+        ["custodian_namespace"] = <"org.openehr">
+        ["MD5-CAM-1.0.1"] = <"4c03dc82597643b7ededa2d6f1ba90c5">
+        ["build_uid"] = <"3bd635ef-0776-3f3d-b10a-421714920cd0">
+    >
+
+definition
+    CLUSTER[at0000] matches {
+        items cardinality matches {0..*; unordered} matches {
+            CLUSTER[at0001] occurrences matches {0..1} matches {
+                items cardinality matches {0..*; unordered} matches {
+                    ELEMENT[at0002] occurrences matches {0..1} matches {
+                        value matches {
+                            C_DV_QUANTITY <
+                                                            >
+                        }
+                    }
+                    ELEMENT[at0003] occurrences matches {0..1} matches {
+                        value matches {
+                            C_DV_QUANTITY <
+                                                            >
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+ontology
+    term_definitions = <
+        ["en"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"testingtesting">
+                    description = <"testingtesting">
+                >
+                ["at0001"] = <
+                    text = <"CLUSTER">
+                    description = <"*">
+                >
+                ["at0002"] = <
+                    text = <"hello">
+                    description = <"*">
+                >
+                ["at0003"] = <
+                    text = <"goodbye">
+                    description = <"*">
+                >
+            >
+        >
+    >
