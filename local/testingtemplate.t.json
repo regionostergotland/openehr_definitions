@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "92aa8bc2799696c7813ad08804465e5b",
+      "MD5-CAM-1.0.1" : "df3153720691c4c42d0759a6177eaf95",
       "PARENT:MD5-CAM-1.0.1" : "4c03dc82597643b7ededa2d6f1ba90c5"
     },
     "details" : {
@@ -106,7 +106,7 @@
                     "terminologyId" : {
                       "value" : "openehr"
                     },
-                    "constraint" : [ "124" ]
+                    "constraint" : [ "122" ]
                   } ]
                 } ],
                 "attributeTuples" : [ {
@@ -125,7 +125,7 @@
                     "members" : [ {
                       "@type" : "C_STRING",
                       "rmTypeName" : "STRING",
-                      "constraint" : [ "kg" ]
+                      "constraint" : [ "m" ]
                     }, {
                       "@type" : "C_REAL",
                       "rmTypeName" : "REAL",
