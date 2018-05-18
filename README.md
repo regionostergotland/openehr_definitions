@@ -1,5 +1,7 @@
 # openehr_definitions
-A repository intended for Reegion Östergötlands local openEHR assets like templates, operational templates and stored AQL queries.
+A repository intended for Region Östergötland's local openEHR runtime assets like operational templates and stored AQL queries.
+
+Please note that authoring of archetypes and templates is usually based on https://github.com/regionostergotland/CKM-mirror/ that contains both international and local assets.
 
 # Tentative naming conventions for the /template directory
 In the subdirectory "templates" we (currently) store templates in a flat list with disciplined file-naming using the form `templatename.versionpattern.filetype` examples follow. We choose to use the version pattern described in https://www.openehr.org/releases/AM/latest/docs/Identification/Identification.html#_version_numbering also for templates. 
@@ -26,9 +28,6 @@ A possible template timeline example  for ADL2 based files
 
 # Tentative naming conventions for the /query directory
 TBD
-
-# Archetypes
-We hope to be able to only use the international CKM http://www.openehr.org/ckm/ or the Swedish incubator in that CKM for archetype work, but might later add a directory here too for possible local editing collaboration needs
 
 # Decision support rules (CDS)
 We might later add a directory here for CDS rule files too if no other collaboration space is found more suitable
