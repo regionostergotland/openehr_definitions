@@ -9,7 +9,7 @@ A project in collaboration between https://www.regionostergotland.se/ and https:
 
 Student project report (in Swedish) http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-157977 with first prototype source code available at https://github.com/alexvestin/wwv
 
-The application pulls data from Google Fitness (that is available on both Android and iOS) and imports it to an openEHR platform. Currently the source code and openEHR models are updated as a summer project at Region Östergötland (using our software dev departments internal legacy versioning tools - TFS...) The updated version will be released as Open Source too, updated manually now and then to https://github.com/regionostergotland/wwv/
+The application pulls data from Google Fitness (that is available on both Android and iOS) and imports it to an openEHR platform. Currently the source code and openEHR models are updated as a summer project at Region Östergötland (using our software dev departments internal legacy versioning tools - TFS...) The updated version will be released as Open Source too, updated manually now and then to https://github.com/regionostergotland/wwv/ (we need to update the code to wollow the new archetyep versiones etc).
 
 __Mindmaps__ (Please note that the link-symbols in the mindmaps that lead to sources, API descriptions etc)
  * [Platforms](https://github.com/regionostergotland/openehr_definitions/blob/master/mindmaps/platforms.xmind) exploration of data (mostly physical activity) gathered by different presonal health platforms (Google Fitness, Apple Health, Samsung Health, Withings, Garmin, Polar, Strava, MyFitnessPal etc.)
