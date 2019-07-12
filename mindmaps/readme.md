@@ -19,7 +19,7 @@ __Mindmaps__ (Please note that the link-symbols in the mindmaps that lead to sou
 
 __Current modeling (July 2019+)__
 
-Discussions are mostly happening in https://openehrclinical.slack.com/ in the channel #physical-activity, and the openEHR archetypes are being versioned mainly in https://github.com/regionostergotland/CKM-mirror/tree/master/local/physical_activity/clusters (and sometimes in other directories in the same git repository where the tools happen to place them automagically). If you are logged in at GitHub and go to https://ehrscape.marand.si/designerv2/#/ and just press login (as the pre-filled "test" user) at and then scroll down to the repository "Region Östergtlands fork of CKM-mirror"... then you might find the archetypes being modelled.
+Discussions are mostly happening in https://openehrclinical.slack.com/ in the channel #physical-activity,s and the openEHR archetypes are being versioned mainly in https://github.com/regionostergotland/CKM-mirror/tree/master/local/physical_activity/clustered (and sometimes in other directories in the same git repository where the tools happen to place them automagically). If you are logged in at GitHub and go to https://ehrscape.marand.si/designerv2/#/ and just press login (as the pre-filled "test" user) at and then scroll down to the repository "Region Östergtlands fork of CKM-mirror"... then you might find the archetypes being modelled.
 
 A snapshot of discussions with a pseudo code instance structure using clusters is available in the file [mindmaps/physical-activity-slack-discussion-1.PNG](https://raw.githubusercontent.com/regionostergotland/openehr_definitions/master/mindmaps/physical-activity-slack-discussion-1.PNG)
 
