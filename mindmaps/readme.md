@@ -1,3 +1,5 @@
+## Moved to https://github.com/regionostergotland/Physical_activity
+
 A directory to store versioned mindmaps used for requirements gathering etc. You may need to download Xmind to view/explore/edit them https://www.xmind.net/
 
 Some of the directory current content highlighted below, we try to update regularly when exploration expands.
